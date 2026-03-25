@@ -1,0 +1,175 @@
+.faq-container {
+    padding: 30px 130px 120px 130px;
+}
+
+.faq-box {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.faq-list {
+  max-width: 1080px;
+  margin: auto 0;
+}
+
+.faq-item {
+  max-width: 1080px;
+  width: 100%;
+  padding: 32px 0;
+  color: #185946;
+  font-size: 16px;
+}
+
+.faq-item:not(:last-child) {
+    border-bottom: 1px solid rgba(16, 126, 95, 0.2);
+
+}
+
+.q-text-box {
+    display: flex;
+    align-items: center;
+    max-width: 1080px;
+}
+
+.text-heading-q {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.text-heading-a {
+    font-size: 28px;
+    font-weight: 400;
+    color: #185946;
+    opacity: 0.5;
+}
+
+.a-text-box {
+    display: flex;
+}
+
+.text-q {
+   font-family: Noto Sans JP;
+   font-size: 20px;
+   font-weight: 400;
+   margin-left: 4px;
+}
+
+.text-a {
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 4px;
+}
+
+
+
+.faq-item.is-open > .m-question::after {
+  content: none;
+}
+
+.faq-item.is-open > .m-answer {
+  max-width: 1060px;
+  letter-spacing: 0.2em;
+  line-height: 1.7;
+  
+}
+
+.faq-item-row.m-question {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  line-height: 1.7;
+  letter-spacing: 0.2em;
+}
+
+.faq-item-row.m-question::before,
+.faq-item-row.m-question::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #185946;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.faq-item-row.m-question::before {
+  transform: translateY(-50%);
+}
+
+.faq-item-row.m-question::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.faq-item-row.m-answer {
+  padding: 16px 0 0;
+  display: none;
+}
+
+@media (max-width: 1023px) {
+.faq-container {
+    padding: 60px 20px ;
+}
+
+.faq-list {
+  max-width: 600px;
+  margin: 0 auto 0;
+}
+
+.faq-item {
+  max-width: 600px;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.q-text-box {
+    max-width: 600px;
+}
+
+.text-q {
+   max-width: 600px;
+   font-size: 16px;
+   font-weight: 400;
+
+}
+
+.text-a {
+   width: 600px;
+
+}
+
+
+
+
+}
+
+@media (max-width: 660px) {
+
+.faq-list {
+  max-width: 311px;
+}
+
+.faq-item {
+  max-width: 311px;
+
+}
+
+.q-text-box {
+  max-width: 311px;
+}
+
+.text-q {
+  width: 255px;
+  
+
+}
+
+.text-a {
+   width: 279px;
+
+}
+
+
+
+}

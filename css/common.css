@@ -1,0 +1,926 @@
+/*-----------------------------------------------------------------
+ベース
+-----------------------------------------------------------------*/
+
+
+body {
+  color: #185946;
+  font-family: "IBM Plex Sans","Noto Sans JP", "游ゴシック", "Yu Gothic", YuGothic,
+    "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "源ノ角ゴシック JP",
+    sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+}
+
+.en {
+  color: #185946;
+  font-family: "IBM Plex Sans";
+
+}
+
+.en a {
+  color: #185946;
+}
+
+@media (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/*-----------------------------------------------------------------
+パンくずリスト
+-----------------------------------------------------------------*/
+
+.breadcrumb {
+  max-width: 1440px;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 144px;
+  display: flex;
+  padding: 0 64px;
+  margin: 144px auto 0 auto;
+    
+}
+
+.breadcrumb > li {
+  display: flex;
+  color: #185946;
+  gap: 8px;
+
+}
+
+.breadcrumb li:after {
+  content: '>';
+  padding: 0 0.2em;
+  color: #185946;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #185946;
+}
+
+@media (max-width: 1023px) {
+
+.breadcrumb {
+    display: none;
+}
+
+    
+}
+
+
+
+
+/*-----------------------------------------------------------------
+共通パーツ
+-----------------------------------------------------------------*/
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing:border-box;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+
+.sp-br {
+  display: none;
+}
+
+@media (max-width: 1240px){
+
+.sp-br {
+  display: block;
+}
+
+}
+
+@media (max-width: 1023px) {
+
+
+.container {
+  max-width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+}
+
+/*-----------------------------------------------------------------
+タイトル
+-----------------------------------------------------------------*/
+
+.section-heading-title-ja {
+  font-size: 56px;
+  font-weight: 200;
+}
+
+.section-heading-title-en {
+  font-size: 96px;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: 0.02em;
+
+}
+
+.section-title-en {
+  font-size: 120px;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 0.02em;
+}
+
+
+
+@media (max-width: 1023px) {
+.section-heading-title-ja {
+  font-size: 28px;
+}
+
+.section-heading-title-en {
+  font-size: 48px;
+}
+
+.section-title-en {
+  font-size: 64px;
+  margin-top: 130px;
+
+}
+
+.section-title-ja {
+  font-size: 20px;
+}
+
+
+
+}
+
+
+/*-----------------------------------------------------------------
+ボタンパーツ
+-----------------------------------------------------------------*/
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F6F8F8;
+    
+  width: 280px;
+  height: 64px;
+  padding: 20px ;
+  border-radius: 40px;
+}
+
+.btn-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #185946;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+   
+  width: 94px;
+  height: 24px;
+  border-radius: 20px;
+  font-size: 28px;
+  background-color: #107E5F;
+  padding: 0 24px ;
+  transition: background-color 0.3s;
+}
+
+.btn-box:hover .btn {
+  background-color: #009E71;
+}
+
+@media (max-width: 1023px) {
+.btn-box {
+  width: 221px;
+  height: 56px;
+  padding: 16px ;
+
+  margin: 0 auto;
+    
+}
+
+.btn {
+  width: 72px;
+  height: 24px;
+  border-radius: 20px;
+  padding: 0 12px ;
+}
+
+
+
+
+}
+
+
+/*-----------------------------------------------------------------
+CONTACT
+-----------------------------------------------------------------*/
+
+.contact {
+  padding-bottom:120px ;
+
+}
+
+.contact-box {
+  max-width: 1312px;
+  width: 100%;
+  color: #fff;
+  padding: 80px 64px;
+  height: 456px;
+  background-color: #185946;
+  border-radius: 20px;
+  
+}
+
+.contact-heading {
+  display:flex;
+  align-items: center;
+   
+  max-width: 1184px;
+  width: 100%;
+
+  height: 96px;
+  margin-bottom: 24px;
+
+}
+
+.contact-heading-ja {
+  margin: 62px 0 0 32px;
+}
+
+.contact-description-box {
+  max-width: 1184px;
+  width: 100%;
+  height: 176px;
+  display: flex;
+  justify-content: space-between;
+
+  border-top: solid 1px #fff;
+}
+
+.contact-description{
+  margin-top: 48px;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  align-items: center;
+  
+}
+
+.contact-information p {
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+
+
+.contact-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff ;
+    
+  width: 280px;
+  height: 64px;
+  padding: 20px ;
+  border-radius: 40px;
+}
+
+.contact-btn-box:hover .btn {
+  background-color: #009E71;
+}
+
+@media(max-width:1023px) {
+
+.contact {
+  padding-bottom: 80px;
+
+}
+
+.contact-box {
+  max-width: 600px;
+  width: 100%;
+  padding: 53px 42px;
+  height: 471px;
+  border-radius: 20px;
+  
+}
+
+.contact-heading {
+  flex-direction: column;
+  max-width: 209px;
+  width: 100%;
+
+  height: 75px;
+  margin-bottom: 16px;
+
+  margin: 0 auto;
+  margin-bottom: 16px;
+
+}
+
+.contact-heading-ja {
+  margin: 0 0 16px 0;
+}
+
+.contact-description-box {
+  flex-direction: column;
+  margin: 0 auto;
+  max-width:600px;
+  width: 100%;
+  height: 260px;
+
+  border-top: solid 1px #fff;
+}
+
+.contact-description{
+  margin-top: 16px;
+  text-align: center;
+} 
+
+.contact-information > p {
+  font-size: 28px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+
+.contact-btn-box {
+  width: 221px;
+  height: 56px;
+  padding: 16px ;
+
+  margin: 0 auto;
+}
+
+.contact-br {
+  display: block;
+}
+  
+}
+
+@media (max-width: 374px) {
+.contact-description {
+  font-size: 15px;
+}
+
+.contact-information > p {
+  font-size: 24px;
+}
+
+
+}
+
+@media (max-width: 345px) {
+.contact-description {
+  font-size: 13px;
+}
+
+.contact-information > p {
+  font-size: 20px;
+}
+
+.contact-btn-box {
+  max-width: 280px;
+  width: 100%;
+  
+}
+
+
+
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------
+ヘッダー
+-----------------------------------------------------------------*/
+
+.header {
+  width: 100%;
+  height: 92px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  max-width: none;
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+
+.header-logo {
+  margin-top: 38px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1440px;
+
+}
+
+
+.header-gnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  max-width: 534px;
+  width: 100%;
+  height: 60px;
+  padding: 0 40px;
+  background-color: #F6F8F8;
+  border-radius: 50px;
+}
+
+
+.header-gnav-list {
+  width: 534px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+}
+
+.header-gnav-recruit {
+  display: flex;
+}
+
+.header-gnav-icon {
+  margin-left: 8px;
+}
+
+.header__contact {
+  max-width: 103px;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: #fff;
+  font-size: 14px;
+  background-color: #107E5F;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.header__contact:hover {
+  background-color: #009E71;
+}
+
+
+.header-gnav-item a {
+  position: relative;
+}
+
+.header-gnav-item a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: rgba(16, 126, 95, 0.5);
+  bottom: -10px;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.5s;
+}
+
+.header-gnav-item a:hover::after {
+  transform: scale(1, 1);
+  transform-origin: left top;
+}
+
+
+.sp-contact-btn-box {
+  display: none;
+}
+
+.sp-menu {
+  display: none;
+}
+
+
+
+@media (max-width: 1023px) {
+.header{
+  height: 56px;
+  transition: background-color 0.5s ease;
+  
+}
+
+.header.is-open {
+  background-color: #F6F8F8;;
+  
+}
+
+.header-logo {
+  margin-top: 10px;
+} 
+
+.header-container {
+  max-width: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.header-header-gnav-btnbox {
+  width: 40px;
+  height: 40px;
+  
+}
+
+.header-header-gnav-btn {
+  display: block;
+  width: 20px;
+  height: 14px;
+  position: relative;
+  padding: 14px 10px;
+  margin: 14px auto;
+  
+  
+}
+
+.header-header-gnav-btn > span {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #185946;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.header-header-gnav-btn > span:nth-child(1) {
+  transform: translateY(-6px);
+}
+
+
+.header-header-gnav-btn > span:nth-child(3) {
+  transform: translateY(6px);
+}
+
+
+.header-gnav {
+  display: none;
+
+}
+
+.header-logo {
+  width: 121px;
+  height: 32px;
+}
+
+/*-----------------------------------------------------------------
+spメニュー
+-----------------------------------------------------------------*/
+
+.sp-menu {
+  display: block;
+  position: fixed;
+  color: #185946;
+  background-color: #F6F8F8;
+  max-width: 1023px;
+  width: 100%;
+  height: 812px;
+  padding: 20px;
+  z-index: 99;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+
+.sp-menu-item  > a {
+  color: #185946;
+  padding: 0 0 16px 0;
+}
+
+.sp-header-logo {
+  width: 121px;
+  height: 32px;
+  padding-top: 20px;
+  
+}
+
+.sp-header-logo > img {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+.sp-manu-list {
+  color: #185946;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 40px 185px 32px 20px;
+  
+}
+
+.sp-menu-item > a {
+  padding-bottom: 16px;
+}
+
+.sp-menu-item-recruit {
+  color: #185946;
+  display: flex;
+
+
+}
+
+.sp-menu-item-recruit > a {
+  color: #185946;
+
+}
+
+.sp-contact-btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff ;
+  border-radius: 40px;
+  width: 221px;
+  height: 56px;
+  padding: 16px ;
+  margin-left: 20px;
+}
+
+/* メニューが開いた状態 */
+.header-container.is-open {
+  background-color: #F6F8F8;
+
+}
+
+.sp-menu.is-open {
+  display: block;
+  transform: translateX(0);
+}
+
+.sp-menu-content {
+  padding: 40px 20px;
+}
+
+.sp-menu-logo {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sp-menu-logo img {
+  width: 121px;
+  height: 32px;
+}
+
+.sp-menu-list {
+  list-style: none;
+}
+
+.sp-menu-item a {
+  display: block;
+  color: #185946;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* ハンバーガーボタンのアニメーション */
+.header-header-gnav-btn.is-active > span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header-header-gnav-btn.is-active > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-header-gnav-btn.is-active > span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .sp-menu {
+        display: none !important;
+    }
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------
+フッター
+-----------------------------------------------------------------*/
+
+.footer {
+  
+  font-size: 16px;
+  
+}
+
+.footer-container {
+  margin: 0 auto;
+  padding: 80px 64px ;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid rgba(24, 89, 70, 0.2);
+
+}
+
+.footer-logo {
+  margin-bottom: 32px;
+
+}
+
+.footer-address {
+  margin-bottom: 16px;
+}
+
+.footer-list {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  width: 272px;
+  height: 171px;
+  display: flex;
+  gap: 16px;
+}
+
+.footer-itemlist {
+  width: 128px;
+  height: 171px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;  
+}
+
+
+.footer-item a {
+  color: #185946;
+}
+
+.footer-item a {
+  position: relative;
+}
+
+.footer-item a::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: rgba(16, 126, 95, 0.5);
+  bottom: -10px;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.5s;
+}
+
+.footer-item a:hover::after {
+  transform: scale(1, 1);
+  transform-origin: left top;
+}
+
+
+
+.sp-footer-itemlist {
+  display: none;
+}
+
+.sp-footer-list {
+  display: none;
+}
+
+
+.pc-br {
+  display: block;
+}
+
+@media (max-width: 1023px) {
+
+.footer-container {
+  padding: 80px 20px;
+
+  max-width: 600px;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 275px;
+  height: 102px;
+}
+
+.footer-information {
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+}
+
+.footer-copyrihgt {
+  margin-top: 17px;
+}
+
+.footer-list {
+  display: none;
+  
+
+}
+
+.sp-footer-list {
+  display: block;
+  display: flex;
+  font-size: 20px;
+  width: 218px;
+  height: 134px;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.sp-footer-itemlist {
+  display: block;
+  width: 101px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;  
+
+}
+
+.pc-br {
+  display: none;
+}
+
+
+}
+
+/*-----------------------------------------------------------------
+フェードイン用
+-----------------------------------------------------------------*/
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px); 
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/*-----------------------------------------------------------------
+スライダー用
+-----------------------------------------------------------------*/
+
+
+.slick-dots {
+  display: none !important;
+}

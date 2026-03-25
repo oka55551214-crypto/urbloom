@@ -1,0 +1,229 @@
+
+/*-----------------------------------------------------------------
+FV
+-----------------------------------------------------------------*/
+
+.fv-picture {
+    margin-top: 46px;
+}
+
+.sp-fv-picture {
+    display: none;
+
+}
+
+@media (max-width: 1023px) {
+
+.section-title-ja {
+   font-size: 20px;
+}
+
+.fv-picture {
+    display: none;
+}
+
+.sp-fv-picture {
+    display: block;
+    margin-top: 40px;
+   text-align: center;
+
+}
+
+}
+
+
+/*-----------------------------------------------------------------
+concept
+-----------------------------------------------------------------*/
+
+
+.concept {
+    padding: 120px 0;
+}
+
+.concept-container {
+    max-width: 1440px;
+    width: 100%;
+    text-align: center;
+}
+
+.logomark > img {
+    margin-bottom: 40px;
+}
+
+.concept-main-text p {
+    margin-bottom: 40px;
+}
+
+.concept-text {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    align-items: last baseline;
+}
+
+@media (max-width: 1023px) {
+
+.concept {
+    padding: 80px 0 64px 0;
+}
+
+
+.logomark {
+    max-width: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logomark > img {
+    margin-bottom: 0;
+}
+
+
+.concept-main-text > h2{
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    padding: 32px 0 0 0 ;
+    margin-bottom: 16px;
+}
+
+.concept-main-text p {
+    margin-bottom: 16px;
+    
+}
+
+}
+
+
+
+/*-----------------------------------------------------------------
+service
+-----------------------------------------------------------------*/
+
+.service {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background-image: url(../img/about/about-bg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.service-container {
+    max-width: 1440px;
+    width: 100%;
+    text-align: center;
+}
+
+.service-description {
+    margin: 80px 0 40px 0;
+}
+
+.service-heading-title {
+    margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+.service {
+    background-image: none;
+
+}
+
+.service-description {
+    margin: 32px 0;
+    letter-spacing: -0.02em;
+}   
+
+.service-main-imag {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+
+}
+
+
+/*-----------------------------------------------------------------
+MVV
+-----------------------------------------------------------------*/
+
+.MVV {
+    padding: 221px 0 181px 0;
+}
+
+.MVV-container {
+    text-align: center;
+}
+
+.MVV-heading-ja {
+
+    margin-bottom: 80px;
+}
+
+.MVV-description-item {
+    margin-bottom: 40px;
+}
+
+.en-title {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.sp-section-img {
+    display: none;
+}
+
+@media (max-width: 1023px)  {
+.MVV {
+    padding: 80px 0 60px 0 ;
+}
+
+.MVV-heading-ja {
+    margin-bottom: 32px;
+}
+
+.MVV-description-item {
+    margin-bottom: 16px;
+}
+
+
+.en-title {
+    margin-bottom: 8px;
+    height: 27px;
+}
+
+.section-img {
+    display: none;
+}
+
+.sp-section-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-bottom: 80px;
+
+}
+
+.sp-section-img > img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+}
+
+
+}
+
+/*-----------------------------------------------------------------
+sectionimg
+-----------------------------------------------------------------*/
+
+
+.section-img {
+    margin-bottom: 120px;
+}
+

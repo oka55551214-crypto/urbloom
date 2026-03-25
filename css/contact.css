@@ -1,0 +1,291 @@
+.contact-form-container {
+    margin-top: 64px;
+    max-width: 673px;
+    margin: 64px auto;
+    font-weight: 400;
+   
+}
+
+.small-required {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+
+.input-name-box {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+
+}
+
+
+.input-name-box > input {
+    width: 320px;
+    height: 54px;
+    border: solid 1px #185946;
+    border-radius: 100px;
+    justify-content: space-between;
+
+}
+
+.input-email-box {
+    margin-top: 8px;
+}
+
+.input-phone-box > input ,.input-email-box > input {
+    width: 673px;
+    height: 54px;
+    border: solid 1px #185946;
+    border-radius: 100px;
+}
+
+.textarea-content-box > textarea {
+    width: 672px;
+    height: 240px;
+    border: solid 1px #185946;
+    border-radius: 16px;
+}
+
+.policy-box > textarea {
+    width: 673px;
+    height: 200px;
+    border: solid 1px #185946;
+    opacity: 0.5;
+    border-radius: 16px;
+
+    font-size: 16px;
+    font-weight: 200;
+    color: #185946;
+    padding: 20px 37px 20px 20px;
+
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.policy-box::-webkit-scrollbar {
+    width: 24px; 
+
+}
+
+.policy-box::-webkit-scrollbar-thumb {
+    background: #185946; 
+    border-radius: 11px;
+    height: 100px;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent; 
+    background-clip: padding-box; 
+}
+
+
+.policy-box::-webkit-scrollbar-track {
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
+
+
+.contact-form-box.input-email-box {
+    flex-direction: column;
+}
+
+
+.policy-box {
+    width: 673px;
+    height: 200px;
+}
+
+.input-name {
+    display: block;
+}
+
+.form-checkbox {
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.checkbox-label {
+    text-align: center;
+    
+}
+
+
+.checkbox-label > input {
+    background-color: #185946;
+    border: 1px solid #185946;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    accent-color: #185946;
+    
+}
+
+
+.form-submit {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #107E5F;
+    border-radius: 40px;
+    width: 200px;
+    margin-top: 64px;
+    margin-bottom: 161px;
+}
+
+.submit-btn {
+    display: block;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0 auto;
+    width: 200px;
+    height: 56px;
+    background-color: #107E5F;
+
+    font-size: 20px;
+    color: #FFF;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+}
+
+.submit-btn:hover {
+  background-color: #009E71;
+}
+
+
+@media (max-width: 1023px) {
+.contact-form-container {
+    max-width: 450px;
+    margin: 39px auto;
+
+}
+
+.contact-form-box {
+    padding: 0 28px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.input-name-box {
+    margin-top: 8px;
+    flex-direction: column;
+    
+}
+
+
+.input-name-box > input {
+    max-width: 450px;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.input-phone-box > input ,.input-email-box > input {
+    max-width: 450px;
+    width: 100%;
+    height: 44px;
+    padding: 0;
+}
+
+.textarea-content-box > textarea {
+    max-width: 450px;
+    width: 100%;
+    height: 240px;
+    margin-top: 8px;
+  
+}
+
+.policy-box {
+    max-width: 450px;
+    width: 100%;
+}
+
+.policy-box > textarea {
+    max-width: 450px;
+    width: 100%;
+    height: 200px;
+    padding: 20px 17px 20px 10px ;
+    font-size: 13px;
+}
+
+.policy-box::-webkit-scrollbar {
+  width: 4px; 
+
+}
+
+.policy-box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  height: 100px;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  background-clip: padding-box;
+}
+
+.policy-box::-webkit-scrollbar-track {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 4px;
+}
+
+
+
+
+
+.policy-box::-webkit-scrollbar-thumb {
+  background: #185946; 
+  border-radius: 10px;
+  
+}
+
+
+.input-name {
+    display: block;
+}
+
+.form-checkbox {
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 20px 0 40px 0;
+
+}
+
+
+.checkbox-label > input {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    
+}
+
+.form-submit {
+    width: 160px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 81px;
+}
+
+.submit-btn {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+
+}
+
+@media (max-width: 350px) {
+.contact-form-container {
+   padding: 0 20px;   
+
+}
+
+}

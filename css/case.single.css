@@ -1,0 +1,87 @@
+.fv-container {
+    padding: 80px 180px 248px 180px;
+}
+
+.single-page-tag {
+    display: inline;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 10px;
+    border: solid 1px #185946;
+    margin-bottom: 4px;
+}
+
+.single-page-subtitle {
+    font-family: Noto Sans JP;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.single-page-title {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.case-picture {
+    margin: 32px 0;
+}
+
+.btn-box {
+    margin-top: 64px;
+}
+
+@media (max-width: 1023px) {
+.case-picture {
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.fv-container {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    padding: 96px 20px 80px 20px;
+    margin: 0 auto;
+}
+
+.case-description {
+    padding-top: 20px;
+}
+
+.single-page-tag {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 10px;
+    border: solid 1px #185946;
+}
+
+.single-page-subtitle {
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.single-page-title {
+    font-size: 24px;
+    letter-spacing: 0;
+    margin-top: 4px;
+}
+
+.case-picture {
+    margin: 20px 0;
+}
+
+.btn-box {
+    margin-top: 40px;
+}
+
+.case-description {
+    letter-spacing: 0;
+   max-width: 345px;
+}
+
+
+}
